@@ -1,0 +1,66 @@
+Project Proposal (1-2 Hours)
+Step Two is all about fleshing out your project idea. For this step, please write a proposal based
+on the project idea you agreed on with your mentor. This proposal should be a 1-2 page
+document that answers the following questions:
+
+
+1.	What tech stack will you use for your final project? You will use React as the
+primary framework for this project.
+    a.	For the final project, I will use the following technologies:
+        i.	Front-end: React (primary framework) for building the user interface.
+        ii. Database: Local Storage for storing user information such as profiles, favorite stocks, and comments.
+        iii.API: The external API from https://stocknewsapi.com/ will provide real-time stock news, and possibly the Yahoo Finance API for stock prices and technical analysis data.
+        iv.	CSS: Bootstrap for styling the user interface.
+
+2.	How will you design your front-end UI?
+    a.	The front-end UI will mimic a social media-style feed:
+        i.	News Feed Layout: Similar to Twitter(X), the primary section will be a vertical feed where users can view news articles associated with stock tickers.
+        ii.	Responsive Design: The app will be fully responsive to ensure a seamless experience on desktops.
+        iii.Stock Search Bar: A prominent stock ticker search bar at the top, allowing users to quickly look up specific stocks.
+        iv.	User Profile Section: Users will have profiles with their tracked stocks, posts, and engagement history.
+        v.	Dark Mode: A user preference for toggling between light and dark mode for better readability.
+        
+3.	What kind of website or web app do you want to build?
+    a.	This project will be a web app designed to allow users to engage with real-time stock-related news and analyze trends. Users will be able to comment on news articles, share their insights on stock performance, and upload oscillator charts showing their technical analysis.
+
+4.	What goal will your project be designed to achieve?
+    a.	The goal of this project is to create a platform that allows day traders, investors, and financial enthusiasts to access stock-related news and trends in a social media-style environment. By allowing users to comment and share insights, the app encourages collaboration and knowledge sharing around stocks. It aims to bridge the gap between real-time financial news and user-driven analysis.
+
+5.	What kind of users will visit your app? In other words, what is the demographic of
+your users?
+    a.	The primary users of this app will include:
+        i.	Day Traders: Looking for quick news and trends to make fast, informed decisions.
+        ii.	Financial Enthusiasts: Individuals who are passionate about the stock market and enjoy analyzing stock news and performance trends.
+        iii.Investors: Long-term investors who want to track news about stocks they hold or are considering.
+        iv.	General Public: People interested in learning more about how stock market news influences prices.
+    b.	The demographic will mostly be adults, from young professionals (ages 20-40) to experienced investors, both male and female.
+
+6.	What data do you plan on using? How are you planning on collecting your data?
+    a.	Data Source: The main source of data will be the external StockNews API, which provides up-to-date news articles on various stock tickers.
+    b.	Stock Prices: A second API such as the Yahoo Finance API can be used for real-time stock price data and historical charts.
+    c.	User Data: User-generated content (e.g., comments, uploaded analysis charts) will be stored in localstorage.
+
+7.	In brief, outline your approach to creating your project (knowing that you may not know everything in advance and that these details might change later).
+
+    Answer questions like the ones below, but feel free to add more information:
+
+        a.	What kinds of issues might you run into with your API?
+            i.	API Issues: I may run into issues with API rate limits or delays in fetching real-time data. To handle this, I will implement caching strategies to store previous responses temporarily and reduce the frequency of API calls.
+        
+        b.	Is there any sensitive information you need to secure?
+            i.	Sensitive Information: The app will collect user information such as email addresses and user-generated content. I could use JSON Web Tokens to handle authentication securely, and sensitive data.
+        
+        c.	What functionality will your app include?
+            i.	User Registration and Login: Users can create profiles to track stocks, comment on articles, and upload analysis charts.
+            ii.	News Feed: Real-time news articles will populate based on selected stock tickers, allowing users to comment and share insights.
+            iii.User Engagement: Users can like, comment, and share their opinions on specific articles and stock trends.
+
+        d.	What will the user flow look like?
+            i.	Homepage: Users land on a homepage that showcases trending stocks and news headlines.
+            ii.	Search/Explore: Users can search for specific stocks, view related news, and analyze charts.
+            iii.Stock Page: For a selected stock ticker, users will see news headlines, stock performance, user comments, and technical analysis data.
+            iv.	User Profile: Users can view their favorite stocks, past comments, and uploaded charts.
+
+        e.	What features make your site more than a CRUD app? What are your stretch goals?
+            i.	Custom Alerts: Allow users to set alerts for specific stock price changes or news headlines.
+            ii.	Social Sharing: Users can share news articles and their analysis on external social media platforms like Twitter or Reddit.
